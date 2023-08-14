@@ -19,7 +19,7 @@ if (remainingQuestions.length) {
     var timeout = startQuestion();
 } else {
     alert('There are no questions added into the application!');
-    window.location.href = "/";
+    window.location.href = "../../index.js";
 }
 
 document.querySelector('div#markYes').addEventListener('click', () => {
@@ -56,7 +56,7 @@ function FinishTest() {
     const score = getCookie('score');
     var [y, n] = score.split('|');
     alert(`Congratulations! You have finished all questions getting ${y} correct and ${n} wrong.`);
-    window.location.href = "/";
+    window.location.href = "../../index.js";
 }
 
 function startQuestion() {
