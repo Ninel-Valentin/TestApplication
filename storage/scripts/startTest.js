@@ -6,20 +6,21 @@ const timer = document.querySelector("h2#timer");
 
 const existingQ = getCookie('questions');
 const existingJson = JSON.parse(existingQ);
-var remainingQuestions = [...existingJson];
-
-var timePerQuestion;
-while (!timePerQuestion) {
-    const val = prompt('How many seconds do you need for each question?')
-    if (isNaN(+val)) {
-        alert('Try again with a number please!');
-    } else timePerQuestion = +val;
-}
+var remainingQuestions = existingJson ? [...existingJson] : [];
 
 if (remainingQuestions.length) {
+    var timePerQuestion;
+    while (!timePerQuestion) {
+        const val = prompt('How many seconds do you need for each question?')
+        if (isNaN(+val)) {
+            alert('Try again with a number please!');
+        } else timePerQuestion = +val;
+    }
     var timeout = startQuestion();
-} else
+} else {
     alert('There are no questions added into the application!');
+    window.location.href = "/";
+}
 
 document.querySelector('div#markYes').addEventListener('click', () => {
     const score = getCookie('score');
