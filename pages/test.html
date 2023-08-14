@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/storage/style/index.css" />
+    <script
+      type="module"
+      src="/storage/scripts/startTest.js"
+      defer="defer"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <a href="/index.html"><h2><<< TEST APPLICATION</h2></a>
+      <section id="questionPanel">
+        <h2 id="timer">00:30</h2>
+        <h1 id="question">
+          <span class="label"> Question 1/x: </span>
+          <br />
+          <span class="q"> Test question </span>
+        </h1>
+        <div id="showAnswer" class="button">Show answer</div>
+      </section>
+      <section class="hidden" id="answerPanel">
+        <h1 id="question">
+          <span class="label"> Question 1/x: </span>
+          <br />
+          <br />
+          <span class="q"> Test question </span>
+          <br />
+          <br />
+          <span class="a"> Test answer </span>
+        </h1>
+        <div style="color: green" id="markYes" class="button">
+          ✔ Answered correctly ✔
+        </div>
+        <div style="color: indianred" id="markNo" class="button">
+          ✖ Answered wrong ✖
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modify Questions</title>
+    <link rel="stylesheet" href="/storage/style/index.css" />
+  </head>
+  <body>
+    <main>
+      <a href="/index.html"><h2><<< TEST APPLICATION</h2></a>
+      <section>
+        <a href="/pages/add.html" class="button">Add Questions</a>
+        <a href="/pages/remove.html" class="button">Remove Questions</a>
+        <a
+          onclick='if(confirm("Are you sure you want to delete all the questions?")){ copy(document.cookie); alert("Questions copied to the clipboard and deleted from the browser."); document.cookie = "questions=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";}'
+          class="button"
+          >Delete all</a
+        >
+      </section>
+    </main>
+  </body>
+</html>

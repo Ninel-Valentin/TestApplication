@@ -1,0 +1,99 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  background-color: cadetblue;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section {
+  height: 80%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: aquamarine;
+  outline: black 1px solid;
+  border-radius: 25px;
+  height: 5vh;
+  width: 60vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  cursor: pointer;
+  transition: background-color 1s;
+  margin: 10px 0;
+
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background-color: azure;
+  transition: background-color 1s;
+}
+
+label,
+input {
+  font-size: 1.75rem;
+}
+
+input {
+  height: 5vh;
+  width: 60vw;
+}
+
+div.inputWrap {
+  margin: 2rem 0;
+}
+
+table#existingQuestions {
+  max-height: 100%;
+  width: 100%;
+  background-color: darkcyan;
+}
+
+table#existingQuestions td {
+  text-align: center;
+  background-color: white;
+}
+
+table#existingQuestions td:nth-child(3) {
+  font-size: 2rem;
+}
+
+.deleteRow {
+  cursor: pointer;
+}
+
+h1#question {
+  text-align: center;
+}
+
+section.hidden {
+  display: none;
+}
